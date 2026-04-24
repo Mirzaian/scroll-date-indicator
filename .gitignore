@@ -9,5 +9,4 @@ playground/dist
 # Local secrets (never commit)
 .env
 .env.*
-!.env.example
 .npmrc
