@@ -1,0 +1,13 @@
+node_modules
+dist
+coverage
+.DS_Store
+*.log
+.vite
+playground/dist
+
+# Local secrets (never commit)
+.env
+.env.*
+!.env.example
+.npmrc

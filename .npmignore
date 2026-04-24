@@ -1,0 +1,10 @@
+node_modules
+src
+playground
+.github
+__tests__
+*.config.ts
+tsconfig.json
+.eslintrc*
+.gitignore
+coverage
