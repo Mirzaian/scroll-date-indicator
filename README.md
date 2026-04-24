@@ -1,7 +1,7 @@
 # Scroll Date Indicator
 
 A lightweight TypeScript library that adds a floating date indicator to
-chronological timelines while the user scrolls.
+chronological timelines while the user scrolls
 
 [![npm](https://img.shields.io/npm/v/@mirzaian/scroll-date-indicator.svg)](https://www.npmjs.com/package/@mirzaian/scroll-date-indicator)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
@@ -16,7 +16,7 @@ chronological timelines while the user scrolls.
 </p>
 
 <p align="center">
-  <sub>Recorded in a real Matrix client to illustrate the intended use case &mdash; the conversation itself is a mock.</sub>
+  <sub>Recorded in a real Matrix client to illustrate the intended use case! The conversation itself is a mock.</sub>
 </p>
 
 ## Purpose
