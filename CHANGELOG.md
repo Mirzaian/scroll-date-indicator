@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-04-24
+
+### Fixed
+- Correct GitHub repository URL in `package.json` so the package shows up under the repo's "Packages" section.
+
+## [0.1.0] - 2026-04-24
+
 ### Added
 - Initial release.
 - Framework-agnostic core (`createScrollDateIndicator`).
