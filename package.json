@@ -1,6 +1,6 @@
 {
   "name": "@mirzaian/scroll-date-indicator",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Floating, date indicator for chronological timelines. Framework-agnostic core with optional React bindings. Works with any chat or feed UI with focus on Matrix-based clients.",
   "license": "MIT",
   "author": "Kevin Mirzaian",

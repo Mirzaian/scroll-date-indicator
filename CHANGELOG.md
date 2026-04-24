@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.2] - 2026-04-24
+
+### Fixed
+- Release workflow: pass `NPM_TOKEN` env so `.npmrc` token interpolation works.
+- Bump CI/release Node version to 22 (Node 20 deprecated on GitHub runners).
+
 ## [0.1.1] - 2026-04-24
 
 ### Fixed
