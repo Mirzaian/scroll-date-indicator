@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for your interest in improving `@mirzaian/scroll-date-indicator`.
+Thanks for your interest in improving `scroll-date-indicator`.
 
 ## Development setup
 

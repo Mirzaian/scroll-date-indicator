@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-04-24
+
+### Changed
+- **Renamed** the package from `@mirzaian/scroll-date-indicator` to `scroll-date-indicator`. The old scoped package is deprecated; please update your imports and `package.json`.
+
 ## [0.1.2] - 2026-04-24
 
 ### Fixed

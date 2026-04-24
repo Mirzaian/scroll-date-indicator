@@ -7,9 +7,9 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      "@mirzaian/scroll-date-indicator/react": path.resolve(__dirname, "../src/react.ts"),
-      "@mirzaian/scroll-date-indicator/presets": path.resolve(__dirname, "../src/presets.ts"),
-      "@mirzaian/scroll-date-indicator": path.resolve(__dirname, "../src/index.ts"),
+      "scroll-date-indicator/react": path.resolve(__dirname, "../src/react.ts"),
+      "scroll-date-indicator/presets": path.resolve(__dirname, "../src/presets.ts"),
+      "scroll-date-indicator": path.resolve(__dirname, "../src/index.ts"),
     },
   },
 });

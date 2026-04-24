@@ -1,7 +1,7 @@
 import { StrictMode, useMemo } from "react";
 import { createRoot } from "react-dom/client";
 import { useRef } from "react";
-import { ScrollDateIndicator } from "@mirzaian/scroll-date-indicator/react";
+import { ScrollDateIndicator } from "scroll-date-indicator/react";
 
 interface Item {
   ts: number;

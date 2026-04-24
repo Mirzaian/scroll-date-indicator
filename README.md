@@ -3,7 +3,7 @@
 A lightweight TypeScript library that adds a floating date indicator to
 chronological timelines while the user scrolls
 
-[![npm](https://img.shields.io/npm/v/@mirzaian/scroll-date-indicator.svg)](https://www.npmjs.com/package/@mirzaian/scroll-date-indicator)
+[![npm](https://img.shields.io/npm/v/scroll-date-indicator.svg)](https://www.npmjs.com/package/scroll-date-indicator)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
 
 ## Demo
@@ -43,11 +43,11 @@ This library:
 ## Installation
 
 ```bash
-npm install @mirzaian/scroll-date-indicator
+npm install scroll-date-indicator
 # or
-pnpm add @mirzaian/scroll-date-indicator
+pnpm add scroll-date-indicator
 # or
-yarn add @mirzaian/scroll-date-indicator
+yarn add scroll-date-indicator
 ```
 
 React is an optional peer dependency. If you use the React bindings, install
@@ -72,8 +72,8 @@ The library reads timestamps directly from the DOM. Each timeline item must
 carry a `data-timestamp` attribute with a Unix timestamp in milliseconds.
 
 ```ts
-import { createScrollDateIndicator } from "@mirzaian/scroll-date-indicator";
-import { formatRelativeDay } from "@mirzaian/scroll-date-indicator/presets";
+import { createScrollDateIndicator } from "scroll-date-indicator";
+import { formatRelativeDay } from "scroll-date-indicator/presets";
 
 const container = document.querySelector("#timeline") as HTMLElement;
 const pill = document.querySelector("#pill") as HTMLElement;
@@ -98,7 +98,7 @@ ctrl.destroy();
 
 ```tsx
 import { useRef } from "react";
-import { ScrollDateIndicator } from "@mirzaian/scroll-date-indicator/react";
+import { ScrollDateIndicator } from "scroll-date-indicator/react";
 
 function ChatRoom({ messages }) {
   const scrollRef = useRef<HTMLDivElement | null>(null);
@@ -216,7 +216,7 @@ Convenience preset with chat-friendly defaults (`itemSelector`,
 `timestampAttr`, `idleHideDelay`, `format`).
 
 ```ts
-import { matrixTimelinePreset } from "@mirzaian/scroll-date-indicator/presets";
+import { matrixTimelinePreset } from "scroll-date-indicator/presets";
 
 const preset = matrixTimelinePreset({ locale: "de-DE" });
 preset.format(new Date()); // "Today"
