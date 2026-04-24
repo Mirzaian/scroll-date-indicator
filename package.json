@@ -1,0 +1,102 @@
+{
+  "name": "@mirzaian/scroll-date-indicator",
+  "version": "0.1.0",
+  "description": "Floating, date indicator for chronological timelines. Framework-agnostic core with optional React bindings. Works with any chat or feed UI with focus on Matrix-based clients.",
+  "license": "MIT",
+  "author": "Kevin Mirzaian",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevin-mirzaian/scroll-date-indicator.git"
+  },
+  "homepage": "https://github.com/kevin-mirzaian/scroll-date-indicator#readme",
+  "bugs": {
+    "url": "https://github.com/kevin-mirzaian/scroll-date-indicator/issues"
+  },
+  "keywords": [
+    "matrix",
+    "matrix-js-sdk",
+    "matrix-rust-sdk",
+    "timeline",
+    "chat",
+    "scroll",
+    "date",
+    "indicator",
+    "react",
+    "typescript"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./react": {
+      "types": "./dist/react.d.ts",
+      "import": "./dist/react.js",
+      "require": "./dist/react.cjs"
+    },
+    "./presets": {
+      "types": "./dist/presets.d.ts",
+      "import": "./dist/presets.js",
+      "require": "./dist/presets.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src",
+    "playground": "vite --config playground/vite.config.ts",
+    "prepublishOnly": "pnpm run typecheck && pnpm run test && pnpm run build"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    },
+    "react-dom": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.5",
+    "@testing-library/react": "^16.0.0",
+    "@types/node": "^20.14.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@typescript-eslint/eslint-plugin": "^7.13.0",
+    "@typescript-eslint/parser": "^7.13.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "eslint": "^8.57.0",
+    "jsdom": "^24.1.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tsup": "^8.1.0",
+    "typescript": "^5.6.0",
+    "vite": "^5.4.0",
+    "vitest": "^1.6.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "packageManager": "pnpm@9.12.0+sha512.4abf725084d7bcbafbd728bfc7bee61f2f791f977fd87542b3579dcb23504d170d46337945e4c66485cd12d588a0c0e570ed9c477e7ccdd8507cf05f3f92eaca"
+}
