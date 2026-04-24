@@ -23,7 +23,15 @@ jobs:
       - run: pnpm typecheck
       - run: pnpm test
       - run: pnpm build
-      - run: pnpm publish --access public --no-git-checks --provenance
+      - name: Publish to npm (skip if version exists)
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          PKG_NAME=$(node -p "require('./package.json').name")
+          PKG_VERSION=$(node -p "require('./package.json').version")
+          if npm view "${PKG_NAME}@${PKG_VERSION}" version >/dev/null 2>&1; then
+            echo "✓ ${PKG_NAME}@${PKG_VERSION} is already published — skipping."
+            exit 0
+          fi
+          pnpm publish --access public --no-git-checks --provenance
