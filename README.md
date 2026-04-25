@@ -10,8 +10,8 @@ chronological timelines while the user scrolls
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./docs/media/demo-dark.gif" />
-    <img alt="Floating date indicator while scrolling a chat timeline" src="./docs/media/demo.gif" width="640" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Mirzaian/scroll-date-indicator/main/docs/media/demo.gif" />
+    <img alt="Floating date indicator while scrolling a chat timeline" src="https://raw.githubusercontent.com/Mirzaian/scroll-date-indicator/main/docs/media/demo.gif" width="640" />
   </picture>
 </p>
 
